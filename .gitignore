@@ -1,0 +1,5 @@
+build/
+*.log
+mos.exe
+*.o
+*.obj
