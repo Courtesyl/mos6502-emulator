@@ -109,6 +109,8 @@ int main(int argc, char* argv[]) {
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 
     uint32_t last_time = SDL_GetTicks();
+    uint32_t fps_last = SDL_GetTicks();
+    int fps_frames = 0;
     bool quit = false;
     SDL_Event e;
 
@@ -134,6 +136,7 @@ int main(int argc, char* argv[]) {
             apu_clock(&apu);
         }
 
+
         if (apu.buffer_count > 0 && apu.dev_id > 0) {
             int queued = SDL_GetQueuedAudioSize(apu.dev_id);
             if (queued < APU_SAMPLE_RATE * 2) {
@@ -146,6 +149,16 @@ int main(int argc, char* argv[]) {
         SDL_RenderClear(renderer);
         SDL_RenderCopy(renderer, texture, NULL, NULL);
         SDL_RenderPresent(renderer);
+
+        fps_frames++;
+        uint32_t now = SDL_GetTicks();
+        if (now - fps_last >= 1000) {
+            char title[64];
+            snprintf(title, sizeof(title), "NES Emulator - %d FPS", fps_frames);
+            SDL_SetWindowTitle(window, title);
+            fps_frames = 0;
+            fps_last = now;
+        }
 
         uint32_t current_time = SDL_GetTicks();
         int32_t delay = 16 - (int32_t)(current_time - last_time);

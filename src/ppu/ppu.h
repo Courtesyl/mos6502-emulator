@@ -55,6 +55,9 @@ typedef struct nes_ppu_t {
 
     // Cartridge pointer for CHR RAM access
     struct cartridge_t *cart;
+
+    // Odd-frame flag (for PPU dot-skip on pre-render scanline)
+    bool odd_frame;
 } nes_ppu_t;
 
 void ppu_init(nes_ppu_t *ppu);

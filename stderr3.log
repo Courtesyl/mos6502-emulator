@@ -1,0 +1,401 @@
+RD $2002: VBLANK=1 SPRITE0=0
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+NMI fired, PC=0x8057
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+Frame 5 completed
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+RD $2002: VBLANK=1 SPRITE0=1
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanline=30 dot=0
+SPRITE0 HIT at scanlin

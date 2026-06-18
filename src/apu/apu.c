@@ -23,13 +23,14 @@ static const uint16_t dmc_periods[16] = {
 };
 
 static const uint8_t triangle_seq[32] = {
-    0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
-    15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0
+    15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,
+    0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
 };
 
 void apu_init(apu_t *apu) {
     memset(apu, 0, sizeof(*apu));
     apu->noise.shift_reg = 1;
+    biquad_init(&apu->hpf, HPF, 0, 20, APU_SAMPLE_RATE, 1);
 }
 
 static void clock_envelope(pulse_channel_t *p) {
@@ -46,6 +47,24 @@ static void clock_envelope(pulse_channel_t *p) {
                 p->env_vol = 15;
         } else {
             p->env_counter--;
+        }
+    }
+}
+
+static void clock_noise_envelope(noise_channel_t *n) {
+    if (n->env_start) {
+        n->env_start = false;
+        n->env_counter = n->env_period;
+        n->env_vol = 15;
+    } else {
+        if (n->env_counter == 0) {
+            n->env_counter = n->env_period;
+            if (n->env_vol > 0)
+                n->env_vol--;
+            else if (n->env_loop)
+                n->env_vol = 15;
+        } else {
+            n->env_counter--;
         }
     }
 }
@@ -79,16 +98,16 @@ static int8_t pulse_output(pulse_channel_t *p) {
     return duty_table[p->duty][p->duty_pos] ? (int8_t)vol : 0;
 }
 
-static int8_t triangle_output(triangle_channel_t *t) {
+static int triangle_output(triangle_channel_t *t) {
     if (t->length_counter == 0 || t->lin_counter == 0) return 0;
     if (t->timer_period < 2) return 0;
-    return (int8_t)(triangle_seq[t->seq] >> 1);
+    return triangle_seq[t->seq] * 3;
 }
 
-static int8_t noise_output(noise_channel_t *n) {
+static int noise_output(noise_channel_t *n) {
     if (n->length_counter == 0) return 0;
     uint8_t vol = n->env_disable ? n->env_period : n->env_vol;
-    return (n->shift_reg & 1) ? (int8_t)vol : 0;
+    return !(n->shift_reg & 1) ? (int8_t)vol : 0;
 }
 
 static int8_t dmc_output(dmc_channel_t *d) {
@@ -243,9 +262,14 @@ void apu_write(apu_t *apu, uint16_t addr, uint8_t data) {
 
 uint8_t apu_read(apu_t *apu, uint16_t addr) {
     if (addr == 0x4015) {
-        uint8_t s = apu->status;
+        uint8_t s = (apu->pulse1.length_counter > 0 ? 1 : 0) |
+                    (apu->pulse2.length_counter > 0 ? 2 : 0) |
+                    (apu->triangle.length_counter > 0 ? 4 : 0) |
+                    (apu->noise.length_counter > 0 ? 8 : 0) |
+                    (apu->dmc.cur_len > 0 ? 16 : 0) |
+                    (apu->frame_irq ? 0x40 : 0) |
+                    (apu->dmc.irq_flag ? 0x80 : 0);
         apu->dmc.irq_flag = false;
-        apu->status &= 0x1F;
         apu->frame_irq = false;
         return s | 0x20;
     }
@@ -337,8 +361,7 @@ static void frame_sequencer_clock(apu_t *apu) {
     if (do_envelope) {
         clock_envelope(&apu->pulse1);
         clock_envelope(&apu->pulse2);
-        pulse_channel_t *np = (pulse_channel_t*)&apu->noise;
-        clock_envelope(np);
+        clock_noise_envelope(&apu->noise);
     }
     // Triangle linear counter clock
     if (do_envelope) {
@@ -375,7 +398,7 @@ static void clock_timer_noise(noise_channel_t *n) {
         n->timer_counter = n->timer_period;
         uint16_t fb;
         if (n->mode)
-            fb = ((n->shift_reg >> 6) ^ (n->shift_reg >> 5)) & 1;
+            fb = ((n->shift_reg >> 0) ^ (n->shift_reg >> 6)) & 1;
         else
             fb = ((n->shift_reg >> 0) ^ (n->shift_reg >> 1)) & 1;
         n->shift_reg = (n->shift_reg >> 1) | (fb << 14);
@@ -404,8 +427,9 @@ void apu_clock(apu_t *apu) {
         int d = dmc_output(&apu->dmc);
         float mixed = (float)(p1 + p2) * 0.45f + (float)t * 0.10f + (float)n * 0.08f + (float)d * 0.20f;
         mixed = mixed > 127.0f ? 127.0f : (mixed < -128.0f ? -128.0f : mixed);
+        mixed = (float)biquad(mixed, &apu->hpf);
         if (apu->buffer_count < (int)(sizeof(apu->buffer) / sizeof(apu->buffer[0]))) {
-            apu->buffer[apu->buffer_count++] = (int16_t)(mixed * 200.0f);
+            apu->buffer[apu->buffer_count++] = (int16_t)(mixed * 700.0f);
         }
     }
 }

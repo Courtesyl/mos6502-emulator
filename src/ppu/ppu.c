@@ -56,6 +56,7 @@ void ppu_init(nes_ppu_t *ppu) {
 
     ppu->sprite_count = 0;
     ppu->sprite_zero_hit_possible = false;
+    ppu->odd_frame = false;
 }
 
 static uint16_t mirror_nametable(nes_ppu_t *ppu, uint16_t addr) {
@@ -165,6 +166,7 @@ uint8_t ppu_register_read(nes_ppu_t *ppu, uint16_t address) {
             uint8_t data = ppu->ppustatus;
             ppu->ppustatus &= ~0x80;
             ppu->w = 0;
+            ppu->nmi_pending = false;
             return data;
         }
 
@@ -297,7 +299,7 @@ static void render_sprite_scanline(nes_ppu_t *ppu, cartridge_t *cart, int scanli
             if (ci == 0) continue;
 
             uint32_t bg = fb_line[x];
-            if (is_sprite_zero && (ppu->ppumask & 0x08) && bg != trans)
+            if (is_sprite_zero && (ppu->ppumask & 0x18) == 0x18 && bg != trans && ci != 0)
                 ppu->ppustatus |= 0x40;
 
             if (!priority || bg == trans)
@@ -364,6 +366,11 @@ static void render_scanline(nes_ppu_t *ppu, cartridge_t *cart, int scanline) {
 }
 
 void ppu_clock(nes_ppu_t *ppu, cartridge_t *cart) {
+    // Odd-frame: skip dot 0 on pre-render scanline
+    if (ppu->scanline == 261 && ppu->dot == 0 && ppu->odd_frame) {
+        ppu->dot = 1;
+    }
+
     // --- VBlank flag & NMI ---
     if (ppu->scanline == 241 && ppu->dot == 1) {
         ppu->ppustatus |= 0x80;
@@ -374,7 +381,7 @@ void ppu_clock(nes_ppu_t *ppu, cartridge_t *cart) {
     // --- Pre-render scanline (261) ---
     if (ppu->scanline == 261) {
         if (ppu->dot == 1) {
-            ppu->ppustatus &= ~0x80;
+            ppu->ppustatus &= ~0xE0;
             ppu->nmi_pending = false;
         }
         if (ppu->dot >= 280 && ppu->dot <= 304)
@@ -411,6 +418,7 @@ void ppu_clock(nes_ppu_t *ppu, cartridge_t *cart) {
         if (ppu->scanline > 261) {
             ppu->scanline = 0;
             ppu->frame_complete = true;
+            ppu->odd_frame = !ppu->odd_frame;
             ppu->scroll_snapshot_t = ppu->t;
             ppu->scroll_snapshot_fine_x = ppu->fine_x;
         }

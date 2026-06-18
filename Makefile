@@ -10,7 +10,7 @@ INC = -Isrc -Isrc/cpu -Isrc/ppu -Isrc/bus -Isrc/cartridge -Isrc/apu
 SRCDIR = src
 BUILDDIR = build
 
-SRCS = $(SRCDIR)/main.c $(SRCDIR)/cpu/mos6502.c $(SRCDIR)/ppu/ppu.c $(SRCDIR)/bus/bus.c $(SRCDIR)/cartridge/cartridge.c $(SRCDIR)/apu/apu.c
+SRCS = $(SRCDIR)/main.c $(SRCDIR)/cpu/mos6502.c $(SRCDIR)/ppu/ppu.c $(SRCDIR)/bus/bus.c $(SRCDIR)/cartridge/cartridge.c $(SRCDIR)/apu/apu.c $(SRCDIR)/apu/biquad.c
 OBJS = $(SRCS:$(SRCDIR)/%.c=$(BUILDDIR)/%.o)
 TARGET = $(BUILDDIR)/mos.exe
 

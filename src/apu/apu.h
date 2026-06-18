@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "biquad.h"
 
 #define APU_SAMPLE_RATE 44100
 
@@ -89,6 +90,7 @@ typedef struct apu_t {
     int dev_id;
     uint8_t *prg_rom;
     uint32_t prg_rom_size;
+    Biquad hpf;
 } apu_t;
 
 void apu_init(apu_t *apu);
